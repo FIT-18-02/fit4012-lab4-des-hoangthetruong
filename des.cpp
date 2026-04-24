@@ -3,6 +3,9 @@
 #include <bitset>
 #include <vector>
 #include <iomanip>
+#include <algorithm>
+#include <cctype>
+
 using namespace std;
 
 // Helper function: Convert decimal to 4-bit binary string
@@ -339,7 +342,7 @@ public:
 
 // Function to validate binary string
 bool isValidBinary(const string& s, int length) {
-    if (s.length() != length) return false;
+    if ((int)s.length() != length) return false;
     for (char c : s) {
         if (c != '0' && c != '1') return false;
     }
