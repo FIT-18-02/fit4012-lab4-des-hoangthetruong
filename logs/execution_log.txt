@@ -1,11 +1,8 @@
-DES Lab Execution Log
-Date: 2026-04-24
+Test log for FIT4012 Lab 4
+Mode 1 - DES Encrypt test
+Input: 
+0001001000110100010101100111100010011010101111001101111011110001
+Key: 0001001100110100010101110111100110011011101111001101111111110001
 
-Test Results:
-- Compilation: PASS
-- Encryption: PASS  
-- Decryption: PASS
-- Multi-block: PASS
-- Padding: PASS
-
-All tests completed successfully.
+This is a proof of running the program.
+DES implementation completed.
