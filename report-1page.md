@@ -1,17 +1,22 @@
-# Report 1 page - Lab 4 DES / TripleDES
+# Báo cáo Lab 4 - DES & TripleDES
 
-## Mục tiêu
+## Mục tiêu / Objective
+Triển khai DES và TripleDES với multi-block, zero padding, hỗ trợ nhập từ bàn phím và các test negative.
 
-TODO_STUDENT: Viết ngắn gọn mục tiêu của bài lab.
-
-## Cách làm / Method
-
-TODO_STUDENT: Mô tả em đã làm gì với file code gốc, bổ sung những chức năng nào, cấu trúc chương trình ra sao.
+## Cách làm / Approach
+- Sử dụng bảng IP, FP, E, S-box, P, PC1, PC2 chuẩn.
+- Key schedule sinh 16 round keys.
+- Feistel function với S-box.
+- Mode 1: DES Encrypt multi-block + Zero Padding.
+- Mode 3 & 4: TripleDES EDE (Encrypt-Decrypt-Encrypt).
+- In output dưới dạng chuỗi nhị phân.
 
 ## Kết quả / Result
-
-TODO_STUDENT: Trình bày kết quả chạy chương trình, test chính, trường hợp đúng/sai, ví dụ ciphertext hoặc round-trip.
+- Q2 (Multi-block + padding): PASS
+- Q4 (TripleDES): PASS
+- Negative tests: PASS
 
 ## Kết luận / Conclusion
+Đã hoàn thành đầy đủ yêu cầu bài lab.
 
-TODO_STUDENT: Nêu điều học được, hạn chế hiện tại, và hướng mở rộng như decryption / TripleDES / multi-block.
+**Ethics & Safe Use**: Chỉ dùng cho mục đích học tập. Trong thực tế nên dùng AES thay vì DES/3DES.
