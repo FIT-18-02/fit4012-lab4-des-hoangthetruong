@@ -5,5 +5,3 @@
 ### Compile
 ```bash
 g++ -std=c++17 -o des des.cpp
-# hoặc
-make
