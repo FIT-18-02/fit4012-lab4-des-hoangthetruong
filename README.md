@@ -31,3 +31,18 @@ Mode 4: TripleDES decrypt
 <K1>
 <K2>
 <K3>
+## Output
+
+Chương trình in ra kết quả cuối cùng dưới dạng chuỗi nhị phân.
+
+- Mã hóa: in ciphertext dạng binary
+- Giải mã: in plaintext dạng binary
+- Độ dài output là bội số của 64 bit
+
+---
+
+The program outputs the final result as a binary string.
+
+- For encryption: ciphertext in binary format.
+- For decryption: plaintext in binary format.
+- Output length is a multiple of 64 bits.
