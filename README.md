@@ -1,22 +1,7 @@
-# FIT4012 Lab 4 DES TripleDES
+## Padding
 
-## How to run / Cách chạy
+Chương trình sử dụng **Zero Padding** để xử lý dữ liệu không đủ block 8 bytes.
 
-Compile:
-g++ -std=c++17 -o des des.cpp
-
-Run:
-./des
-
-Input / Đầu vào:
-- mode (1 cho DES, 3 cho 3DES encrypt, 4 cho 3DES decrypt)
-- plaintext hoặc ciphertext ở dạng binary
-- key ở dạng binary
-
-Output / Đầu ra:
-chuỗi binary của kết quả mã hóa hoặc giải mã
-
-## Ethics & Safe Use
-Chỉ dùng cho học tập.
-
-Tác giả: Jenifer
+- Block size: 8 bytes (DES)
+- Nếu dữ liệu không chia hết cho 8, sẽ thêm byte `0x00` vào cuối
+- Khi giải mã, các byte `0x00` sẽ được loại bỏ
