@@ -1,15 +1,33 @@
-## Padding
+## How to run
 
-Chương trình sử dụng **Zero Padding** để xử lý dữ liệu không đủ block 8 bytes.
+Compile:
+g++ -std=c++17 des.cpp -o des
 
-- Block size: 8 bytes (DES)
-- Nếu dữ liệu không chia hết cho 8, sẽ thêm byte `0x00` vào cuối
-- Khi giải mã, các byte `0x00` sẽ được loại bỏ
+Run:
+./des
 
----
+Input format:
 
-This program USES padding.
+Mode 1: DES encrypt
+1
+<plaintext (binary)>
+<key (64-bit binary)>
 
-Padding scheme: ZERO PADDING.
+Mode 2: DES decrypt
+2
+<ciphertext (binary)>
+<key (64-bit binary)>
 
-Input data is padded with 0x00 bytes to make its length a multiple of 8 bytes.
+Mode 3: TripleDES encrypt
+3
+<plaintext>
+<K1>
+<K2>
+<K3>
+
+Mode 4: TripleDES decrypt
+4
+<ciphertext>
+<K1>
+<K2>
+<K3>
