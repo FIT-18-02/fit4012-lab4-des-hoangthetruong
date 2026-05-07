@@ -4,6 +4,4 @@
 
 **Compile:**
 ```bash
-g++ -std=c++17 des.cpp -o des
-- For decryption: plaintext in binary format.
-- Output length is a multiple of 64 bits.
+g++ -std=c++17 -Wall -Wextra -pedantic des.cpp -o des
