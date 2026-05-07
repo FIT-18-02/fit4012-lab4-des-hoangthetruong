@@ -1,6 +1,6 @@
 # Lab 4 - Thuật toán DES & Triple DES
 
-## How to run / Cách chạy
+## How to run / Cách chạy / Compile
 
 **Compile:**
 ```bash
